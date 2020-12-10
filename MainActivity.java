@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.custom_toast, findViewById(R.id.custom_toast_container));
+        
         TextView text = layout.findViewById(R.id.text);
         text.setText("This is a custom toast - we can make it as long as we want!");
 
