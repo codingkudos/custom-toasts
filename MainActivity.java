@@ -19,16 +19,16 @@ public class MainActivity extends AppCompatActivity {
 
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.custom_toast, findViewById(R.id.custom_toast_container));
-        
-        TextView text = layout.findViewById(R.id.text);
-        text.setText("This is a custom toast - we can make it as long as we want!");
+
+        TextView text = layout.findViewById(R.id.textView);
+        text.setText("Hello this is a custom toast message with a teal background and radius of 5dp.");
 
         Button buttonToast = findViewById(R.id.buttonToast);
         buttonToast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = new Toast(getApplicationContext());
-                toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                Toast toast = new Toast(MainActivity.this);
+                toast.setGravity(Gravity.CENTER, 0, 0);
                 toast.setDuration(Toast.LENGTH_LONG);
                 toast.setView(layout);
                 toast.show();
