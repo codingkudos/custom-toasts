@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/custom_toast_container"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#D89A6A"
     android:orientation="horizontal"
@@ -11,7 +11,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginRight="8dp"
-        android:src="@drawable/ck_logo" />
+        android:src="@drawable/ic_android_black_24dp" />
 
     <TextView
         android:id="@+id/text"
@@ -19,5 +19,5 @@
         android:layout_height="wrap_content"
         android:textColor="#FFF"
         tools:text="Sample Text" />
-        
+
 </LinearLayout>
